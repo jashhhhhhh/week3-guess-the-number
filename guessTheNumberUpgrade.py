@@ -1,4 +1,4 @@
-# replace the contents of this comment with your name
+# Joshua McKnight
 import random
 
 # -------------------------------------------------------------------
@@ -7,6 +7,8 @@ import random
 #   'topLimit' which is the top limit for the random number generator
 # the function returns the random number generated to its caller
 def generateNumber( topLimit ):
+	
+	return random.randint(1, topLimit)
     
     # TO DO: ####################################################
     # Write code in this function that calculates and           #
@@ -44,7 +46,16 @@ def askUserToGuess( times, secretNumber ):
 #   the 'userGuess' parameter is the answer entered by the user
 #   the 'userSecretNumber' parameter is the randomly generated number
 def evaluateAnswer( userGuess, userSecretNumber ):
-    
+	if userGuess < userSecretNumber:
+		print('Your guess is too low.')
+		return False
+	elif userGuess > userSecretNumber:
+    		print('Your guess is too high.')
+		return False
+	else:
+		retuen True
+		break
+		
     # TO DO: ####################################################
     # Write code in this function that compares userGuess and   #
     # userSecretNumber. The code should:                        #
@@ -66,7 +77,19 @@ def evaluateAnswer( userGuess, userSecretNumber ):
 #       True, we'll show the right answer on the screen
 #       False, we won't show the right answer on the screen
 def playGame( showAnswer ):
-    
+	print('Hello!')
+	print('Choose upper limit of possible number:')
+		upLimit  = int(input())
+	print('Choose number of guesses you wish to take:')
+		totalGuesses = int(input())
+
+    	theNumber = generateNumber(upLimit)
+
+	print('Guess a number between 1 and' + str(upLimit))
+	
+
+	evaluateAnswer = (askUserToGuess(totalGuesses, theNumber), theNumber)
+
     # TO DO: ####################################################
     # Write code in this function that                          #
     # 1. Greets the user                                        #
