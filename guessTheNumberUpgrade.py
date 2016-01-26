@@ -83,7 +83,7 @@ def playGame( showAnswer ):
 	print('Choose number of guesses you wish to take:')
 		totalGuesses = int(input())
 
-    	theNumber = generateNumber(upLimit)
+    	theNumber = int(generateNumber(upLimit))
 
 	print('Guess a number between 1 and' + str(upLimit))
 	
