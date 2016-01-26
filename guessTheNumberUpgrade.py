@@ -88,7 +88,7 @@ def playGame( showAnswer ):
 	print('Guess a number between 1 and' + str(upLimit))
 	
 
-	evaluateAnswer = (askUserToGuess(totalGuesses, theNumber), theNumber)
+	askUserToGuess(totalGuesses, theNumber)
 
     # TO DO: ####################################################
     # Write code in this function that                          #
