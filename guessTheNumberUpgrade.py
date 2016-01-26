@@ -53,7 +53,7 @@ def evaluateAnswer( userGuess, userSecretNumber ):
     		print('Your guess is too high.')
 		return False
 	else:
-		retuen True
+		return True
 		break
 		
     # TO DO: ####################################################
