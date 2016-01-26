@@ -85,9 +85,9 @@ def playGame( showAnswer ):
 
     	theNumber = int(generateNumber(upLimit))
 	
-
+	print('You have' + str(totalGuesses) + ' guesses')
 	print('Guess a number between 1 and' + str(upLimit))
-	print('You have' + str(totalGuesses) + ' guesses remaining')
+	
 
     # TO DO: ####################################################
     # Write code in this function that                          #
