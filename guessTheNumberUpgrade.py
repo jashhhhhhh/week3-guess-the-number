@@ -7,7 +7,6 @@ import random
 #   'topLimit' which is the top limit for the random number generator
 # the function returns the random number generated to its caller
 def generateNumber( topLimit ):
-	
 	return random.randint(1, topLimit)
     
     # TO DO: ####################################################
@@ -54,7 +53,7 @@ def evaluateAnswer( userGuess, userSecretNumber ):
 		return False
 	else:
 		return True
-		break
+		
 		
     # TO DO: ####################################################
     # Write code in this function that compares userGuess and   #
@@ -79,9 +78,10 @@ def evaluateAnswer( userGuess, userSecretNumber ):
 def playGame( showAnswer ):
 	print('Hello!')
 	print('Choose upper limit of possible number:')
-		upLimit  = int(input())
+	upLimit  = int(input())
+
 	print('Choose number of guesses you wish to take:')
-		totalGuesses = int(input())
+	totalGuesses = int(input())
 
     	theNumber = int(generateNumber(upLimit))
 	
