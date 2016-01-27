@@ -29,7 +29,7 @@ def askUserToGuess( times, secretNumber ):
 
     # this loop cycles through all the user guesses
     for guessesTaken in range(1, times+1):
-        print('Take your guess #' + str(guessesTaken) + ': ')
+       	print('Take your guess #' + str(guessesTaken) + ': ')
         guess = int(input())
 
         if evaluateAnswer( guess, secretNumber ) == True:
@@ -88,7 +88,7 @@ def playGame( showAnswer ):
 	print('You have' + str(totalGuesses) + ' guesses')
 	print('Guess a number between 1 and' + str(upLimit))
 	
-
+	askUserToGuess(totalGuesses,theNumber)
     # TO DO: ####################################################
     # Write code in this function that                          #
     # 1. Greets the user                                        #
